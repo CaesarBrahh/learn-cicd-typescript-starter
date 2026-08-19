@@ -4,7 +4,8 @@ export function getAPIKey(headers: IncomingHttpHeaders): string | null {
   // stores the value of the authorization header from the incoming HTTP request headers object and check if that value is present
   const authHeader = headers["authorization"];
   if (!authHeader) {
-    return null;
+    //return null;
+    return "test failure";
   }
 
   // Splits and returns only the second part "Apikey abc123" --> "abc123"
