@@ -36,6 +36,9 @@ jobs:
         uses: actions/setup-node@v5
         with:
           node-version: 22
+      
+      - name: Install dependencies
+        run: npm ci
 
       - name: Style
         run: npm run format:check
