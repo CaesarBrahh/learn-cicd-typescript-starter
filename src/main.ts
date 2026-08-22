@@ -49,5 +49,5 @@ app.listen(config.api.port, () => {
 });
 
 function unused() {
-    // linter testing
+  // linter testing
 }
